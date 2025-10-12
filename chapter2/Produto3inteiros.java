@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; // Biblioteca necessaria para input de variaveis
 public class Produto3inteiros {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -13,5 +13,5 @@ public class Produto3inteiros {
 
         System.out.println("Product is " + result);
 
-    }
-}
+    } // Fim do metodo
+} // Fim da classe
