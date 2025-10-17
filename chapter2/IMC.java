@@ -10,6 +10,7 @@ public class IMC {
         float h = input.nextFloat();
         float imc = w /(h*h);
 
+        System.out.println("Your IMC is " + imc);
         if  (imc < 18.5)
             System.out.println("Underweight: less than 18.5");
         else if (imc < 25)
