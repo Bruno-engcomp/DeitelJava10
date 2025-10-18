@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class IMC {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter your weight:");
+        System.out.print("Enter your weight in kilogramers:");
         float w = input.nextFloat();
 
-        System.out.print("Enter your height:");
+        System.out.print("Enter your height in meters:");
         float h = input.nextFloat();
         float imc = w /(h*h);
 
