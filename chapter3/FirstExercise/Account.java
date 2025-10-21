@@ -20,6 +20,13 @@ public class Account {
             balance = balance + depositAmount; // o adiciona ao saldo
 
     }
+    public void withdrawal(double withdrawal)
+    {
+        if(withdrawal < balance && withdrawal > 0.0) // Se o saque for validado
+            balance = balance - withdrawal; // Retira o saldo
+        else
+            System.out.println("withdraw amount exceeded account balance or invaled withdraw");
+    }
 
     // Metodo que retorna o saldo de conta
     public double getBalance()
