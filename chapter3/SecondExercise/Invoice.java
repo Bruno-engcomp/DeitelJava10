@@ -1,10 +1,10 @@
 package SecondExercise;
 
 public class Invoice {
-    String name;
-    String description;
+    private String name;
+    private String description;
     int number;
-    double price;
+    private double price;
     double InvoiceAmount;
 
     public Invoice(String name ,String description, double price)
