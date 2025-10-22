@@ -5,8 +5,23 @@ public class Invoice {
     String description;
     int number;
     double price;
+    double InvoiceAmount;
 
-    public void getInvoiceAmount()
+    public Invoice(String name ,String description, double price)
+    {
+        this.name = name;
+        this.description = description;
+
+        if (price > 0)
+            this.price = price;
+        else
+            System.out.println("This price is invalid, set other price...");
+    }
+    public double getInvoiceAmount(int number, double price)
+    {
+        InvoiceAmount = number * price;
+        return InvoiceAmount;
+    }
 
 
     // Metodo que define o nome do produto
@@ -25,6 +40,8 @@ public class Invoice {
     public int getNumber() { return number; }
 
     public double getPrice() { return price; }
+
+
 
 
 
