@@ -24,5 +24,9 @@ public class InvoiceTest {
         keyboard.setPrice(nprice);
 
         System.out.println("The new price of keyboard is " + keyboard.getPrice());
+
+        System.out.println("Enter the new description of mouse: ");
+
+        System.out.println("Enter the new description of keyboard: ");
     }
 }
