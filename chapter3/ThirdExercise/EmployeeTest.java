@@ -37,8 +37,8 @@ public class EmployeeTest {
 
         Employee1.raiseSalary();
         Employee2.raiseSalary();
-        
+
         System.out.printf("%n The new salary of %s is %.2f%n", Employee1.getName(), Employee1.getSalary());
-        System.out.printf("%n The new salary of %s is %.2f%n", Employee2.getName(), Employee2.getSalary() *);
+        System.out.printf("%n The new salary of %s is %.2f%n", Employee2.getName(), Employee2.getSalary());
     }
 }

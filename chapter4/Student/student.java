@@ -1,11 +1,11 @@
 package Chapter4.ClassStudent;
 
-public class Student {
+public class student {
     private String name;
     private double average;
 
     // Construtor inicializa variaveis de instancia
-    public Student(String name, double average)
+    public student(String name, double average)
     {
         this.name = name;
 
