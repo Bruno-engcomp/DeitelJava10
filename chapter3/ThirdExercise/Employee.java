@@ -17,6 +17,7 @@ public class Employee {
     else
         System.out.print("This salary is invalid,");
     }
+    public void raiseSalary () {salary = salary * 1.1;}
 
     public void setName(String name) {this.name = name;}
     public void setLastName(String lastName) {this.lastName = lastName;}

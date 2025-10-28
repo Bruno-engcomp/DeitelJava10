@@ -35,7 +35,10 @@ public class EmployeeTest {
 
         System.out.print("The employees got a 10% raise\n.");
 
-        System.out.printf("%n The new salary of %s is %.2f%n", Employee1.getName(), Employee1.getSalary() * 1.1);
-        System.out.printf("%n The new salary of %s is %.2f%n", Employee2.getName(), Employee2.getSalary() * 1.1);
+        Employee1.raiseSalary();
+        Employee2.raiseSalary();
+        
+        System.out.printf("%n The new salary of %s is %.2f%n", Employee1.getName(), Employee1.getSalary());
+        System.out.printf("%n The new salary of %s is %.2f%n", Employee2.getName(), Employee2.getSalary() *);
     }
 }
