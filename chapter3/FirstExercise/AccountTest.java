@@ -25,9 +25,9 @@ public class AccountTest {
         account1.deposit(depositAmount); // adiciona o saldo de account1
 
         // exibe os saldos
-        System.out.printf("%s balance: $%.2f %n", account1.getName(),account1.getBalance());
+        displayAccount(account1);
+        displayAccount(account2);
 
-        System.out.printf("%s balance: $%.2f %n", account2.getName(),account2.getBalance());
 
         System.out.printf("Enter deposit amount for account2: "); // prompt
         depositAmount = input.nextDouble(); // obtém a entrada do usuário
@@ -36,9 +36,8 @@ public class AccountTest {
         account2.deposit(depositAmount); // adiciona o saldo de account1
 
         // exibe os saldos
-        System.out.printf("%s balance: $%.2f %n", account1.getName(),account1.getBalance());
-
-        System.out.printf("%s balance: $%.2f %n", account2.getName(),account2.getBalance());
+        displayAccount(account1);
+        displayAccount(account2);
 
         System.out.printf("Enter Withdraw for account1: ");
         double withdrawal = input.nextDouble(); // Obtem a entrada do usuario
@@ -47,9 +46,8 @@ public class AccountTest {
         account1.withdrawal(withdrawal);
 
         // exibe os saldos
-        System.out.printf("%s balance: $%.2f %n", account1.getName(),account1.getBalance());
-
-        System.out.printf("%s balance: $%.2f %n", account2.getName(),account2.getBalance());
+        displayAccount(account1);
+        displayAccount(account2);
 
         System.out.printf("Enter Withdraw for account2: ");
         withdrawal = input.nextDouble(); // Obtem a entrada do usuario
@@ -58,11 +56,16 @@ public class AccountTest {
         account2.withdrawal(withdrawal);
 
         // exibe os saldos
-        System.out.printf("%s balance: $%.2f %n", account1.getName(),account1.getBalance());
-
-        System.out.printf("%s balance: $%.2f %n", account2.getName(),account2.getBalance());
+        displayAccount(account1);
+        displayAccount(account2);
 
 
 
     } // Fim de main
+    public static void displayAccount(Account account)
+    {
+        System.out.printf("%s balance: $%.2f %n", account.getName(),account.getBalance());
+    }
 } // fim da classe
+
+

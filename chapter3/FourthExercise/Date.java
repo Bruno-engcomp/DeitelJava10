@@ -14,30 +14,30 @@ public class Date {
         if(year > 0)
             this.year = year;
     }
-    void displayDate ()
+    public void displayDate ()
     {
         System.out.printf("The date is %d/%d/%d%n",getMonth(),getDay(),getYear());
     }
 
-    int getDay () {return day;}
-    int getMonth () {return month;}
-    int getYear () {return year;}
+    public int getDay () {return day;}
+    public int getMonth () {return month;}
+    public int getYear () {return year;}
 
-    void setDay (int day)
+    public void setDay (int day)
     {
         if(day < 32 && day > 0)
             this.day = day;
         else
             System.out.println("The day is invalid");
     }
-    void setMonth (int month)
+    public void setMonth (int month)
     {
         if (month > 0 && month < 13)
             this.month = month;
         else
             System.out.println("The month is invalid");
     }
-    void setYear (int year)
+    public void setYear (int year)
     {
         if(year > 0)
             this.year = year;
