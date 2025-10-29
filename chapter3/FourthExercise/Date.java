@@ -5,7 +5,15 @@ public class Date {
     private int year;
     private int month;
 
-
+    public Date (int day, int month, int year)
+    {
+        if(day < 32 && day > 0)
+            this.day = day;
+        if (month > 0 && month < 13)
+            this.month = month;
+        if(year > 0)
+            this.year = year;
+    }
     void displayDate ()
     {
         System.out.printf("The date is %d/%d/%d%n",getMonth(),getDay(),getYear());
@@ -19,16 +27,22 @@ public class Date {
     {
         if(day < 32 && day > 0)
             this.day = day;
+        else
+            System.out.println("The day is invalid");
     }
     void setMonth (int month)
     {
         if (month > 0 && month < 13)
             this.month = month;
+        else
+            System.out.println("The month is invalid");
     }
     void setYear (int year)
     {
         if(year > 0)
             this.year = year;
+        else
+            System.out.println("The year is invalid");
     }
 
 
