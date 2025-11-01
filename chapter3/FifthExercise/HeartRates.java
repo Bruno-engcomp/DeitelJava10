@@ -20,4 +20,12 @@ public class HeartRates {
     {
         System.out.printf("");
     }
+
+    // Funcoes para armazenar nas variaveis
+    void setName (String name) {this.name = name;}
+    void setSurname (String surname) {this.surname = surname;}
+    void setBirthday (int birthday) {this.birthday = birthday;}
+    void setBirthmonth (int birthmonth) {this.birthmonth = birthmonth;}
+    void setBirthyear (int birthyear) {this.birthyear = birthyear;}
+
 }
