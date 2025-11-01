@@ -5,12 +5,13 @@ public class HeartRatesTest {
         HeartRates Patient1 = new HeartRates("Bruno", "Almeida", 6,9,2007);
         HeartRates Patient2 = new HeartRates("Allana", "Kamilla", 14,3,2007);
         displayInformations(Patient1);
+        displayInformations(Patient2);
 
     }
 
     public static void displayInformations(HeartRates patient)
     {
-        System.out.printf("Name: %s%nSurname: %s%nbirthday %d/%d/%d ", patient.getName(), patient.getSurname(),
+        System.out.printf("Name: %s%nSurname: %s%nbirthday %d/%d/%d%n", patient.getName(), patient.getSurname(),
                 patient.getBirthday(), patient.getBirthmonth(), patient.getBirthyear());
     }
 }

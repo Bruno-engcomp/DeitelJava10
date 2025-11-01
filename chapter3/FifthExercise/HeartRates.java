@@ -11,7 +11,7 @@ public class HeartRates {
     {
         this.name = name;
         this.surname = surname;
-        
+
         if(birthday > 0 && birthday < 32)
             this.birthday = birthday;
         if(birthmonth > 0 && birthmonth < 13)
