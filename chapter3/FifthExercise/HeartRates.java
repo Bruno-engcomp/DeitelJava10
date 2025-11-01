@@ -28,4 +28,11 @@ public class HeartRates {
     void setBirthmonth (int birthmonth) {this.birthmonth = birthmonth;}
     void setBirthyear (int birthyear) {this.birthyear = birthyear;}
 
+    // Funcoes para exibir as variaveis
+    String getName () {return name;}
+    String getSurname () {return surname;}
+    int getBirthday () {return birthday;}
+    int getBirthmonth () {return birthmonth;}
+    int getBirthyear () {return birthyear;}
+
 }
