@@ -22,17 +22,18 @@ public class HeartRates {
     }
 
     // Funcoes para armazenar nas variaveis
-    void setName (String name) {this.name = name;}
-    void setSurname (String surname) {this.surname = surname;}
-    void setBirthday (int birthday) {this.birthday = birthday;}
-    void setBirthmonth (int birthmonth) {this.birthmonth = birthmonth;}
-    void setBirthyear (int birthyear) {this.birthyear = birthyear;}
+    public void setName (String name) {this.name = name;}
+    public void setSurname (String surname) {this.surname = surname;}
+    public void setBirthday (int birthday) {this.birthday = birthday;}
+    public void setBirthmonth (int birthmonth) {this.birthmonth = birthmonth;}
+    public void setBirthyear (int birthyear) {this.birthyear = birthyear;}
 
     // Funcoes para exibir as variaveis
-    String getName () {return name;}
-    String getSurname () {return surname;}
-    int getBirthday () {return birthday;}
-    int getBirthmonth () {return birthmonth;}
-    int getBirthyear () {return birthyear;}
+    public String getName () {return name;}
+    public String getSurname () {return surname;}
+    public int getBirthday () {return birthday;}
+    public int getBirthmonth () {return birthmonth;}
+    public int getBirthyear () {return birthyear;}
+
 
 }

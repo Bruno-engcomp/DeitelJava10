@@ -7,4 +7,10 @@ public class HeartRatesTest {
 
 
     }
+
+    public static void displayInformations(HeartRates patient)
+    {
+        System.out.printf("Name: %s%nSurname: %s%nbirthday %d/%d/%d ", patient.getName(), patient.getSurname(),
+                patient.getBirthday(), patient.getBirthmonth(), patient.getBirthyear());
+    }
 }
