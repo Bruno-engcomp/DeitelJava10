@@ -20,7 +20,8 @@ public class HeartRatesTest {
         Patient1.setBirthday(input.nextInt());
 
         displayInformations(Patient1);
-
+        System.out.printf("The age o patient1 is: %d", Patient1.getAge());
+        Patient1.getAge();
     }
 
     public static void displayInformations(HeartRates patient)

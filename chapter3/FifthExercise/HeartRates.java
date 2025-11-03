@@ -19,9 +19,9 @@ public class HeartRates {
         if(birthyear > 1900)
             this.birthyear = birthyear;
     }
-    void birthdate(int birthday, int birthmonth, int birthyear)
+    void birthdate()
     {
-        System.out.printf("");
+        System.out.printf("%d/%d/%d", getBirthday(), getBirthmonth(), getBirthyear());
     }
 
     // Funcoes para armazenar nas variaveis
@@ -37,6 +37,7 @@ public class HeartRates {
     public int getBirthday () {return birthday;}
     public int getBirthmonth () {return birthmonth;}
     public int getBirthyear () {return birthyear;}
+    public int getAge () {return 2025 - birthyear;}
 
 
 }
