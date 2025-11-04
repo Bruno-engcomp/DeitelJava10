@@ -7,10 +7,10 @@ public class HealthProfile {
     int dd;
     int mm;
     int yy;
-    float height; // In meters
-    float weight; // In Kilograms
+    double height; // In meters
+    double weight; // In Kilograms
 
-    public HealthProfile (String name, String surname, String sex, int dd, int mm, int yy, float height, float weight)
+    public HealthProfile (String name, String surname, String sex, int dd, int mm, int yy, double height, double weight)
     {
         this.name = name;
         this.surname = surname;
@@ -20,7 +20,7 @@ public class HealthProfile {
             this.dd = dd;
         if (mm > 0 && mm < 13)
             this.mm = mm;
-        if (yy > 0 && < 2026)
+        if (yy > 0 && yy < 2026)
             this.yy = yy;
         if (height > 0.20)
             this.height = height;
@@ -29,14 +29,16 @@ public class HealthProfile {
 
     }
 
+
     String getName() {return name;}
     String getSurname() {return surname;}
     String getSex() {return sex;}
     int getDd() {return dd;}
     int getMm() {return mm;}
     int getYy() {return yy;}
-    float getHeight() {return height;}
-    float getWeight() {return weight;}
+    int getAge() {return 2025 - yy;}
+    double getHeight() {return height;}
+    double getWeight() {return weight;}
 
     void setName(String name) {this.name = name;}
     void setSurname (String surname) {this.surname = surname;}
@@ -56,5 +58,6 @@ public class HealthProfile {
         if(yy > 0 && yy < 2026)
             this.yy = yy;
     }
+
 
 }
