@@ -3,7 +3,8 @@ package SixthExercise;
 
 public class HealthProfileTest {
     public static void main(String[] args) {
-        HealthProfile patient1 = new HealthProfile("Bruno", "ALmeida", "Male", 6, 9, 2007, 1.83 , 75.00);
+        HealthProfile patient1 = new HealthProfile("Bruno", "Almeida", "Male", 6, 9, 2007, 1.83 , 75.00);
+        HealthProfile patient2 = new HealthProfile("Allana", "Kamilla", "Female", 14, 3, 2007, 1.64, 50.00);
     }
 
     public static void heartRateInterval(HealthProfile Patient)
