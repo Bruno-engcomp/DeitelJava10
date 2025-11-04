@@ -41,6 +41,20 @@ public class HealthProfile {
     void setName(String name) {this.name = name;}
     void setSurname (String surname) {this.surname = surname;}
     void setSex(String sex) {this.sex = sex;}
-    
+    void setDd(int dd)
+    {
+        if (dd > 0 && dd < 32)
+            this.dd = dd;
+    }
+    void setMm(int mm)
+    {
+        if (mm > 0 && mm < 13)
+            this.mm = mm;
+    }
+    void setYy(int yy)
+    {
+        if(yy > 0 && yy < 2026)
+            this.yy = yy;
+    }
 
 }
