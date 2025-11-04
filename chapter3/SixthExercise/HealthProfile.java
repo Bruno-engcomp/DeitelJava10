@@ -29,5 +29,18 @@ public class HealthProfile {
 
     }
 
+    String getName() {return name;}
+    String getSurname() {return surname;}
+    String getSex() {return sex;}
+    int getDd() {return dd;}
+    int getMm() {return mm;}
+    int getYy() {return yy;}
+    float getHeight() {return height;}
+    float getWeight() {return weight;}
+
+    void setName(String name) {this.name = name;}
+    void setSurname (String surname) {this.surname = surname;}
+    void setSex(String sex) {this.sex = sex;}
+    
 
 }
