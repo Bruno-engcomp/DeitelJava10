@@ -7,9 +7,13 @@ public class HealthProfileTest {
         HealthProfile patient2 = new HealthProfile("Allana", "Kamilla", "Female", 14, 3, 2007, 1.64, 50.00);
     }
 
+    public static void DisplayHealthProfile(HealthProfile Patient)
+    {
+        System.out.printf("Name: %s%d Surname: %s%d", Patient.getName(),);
+    }
     public static void heartRateInterval(HealthProfile Patient)
     {
-        double maxHeartRate = 220 - (2025 - Patient.yy);
+        double maxHeartRate = 220 - (2025 - Patient.getYy());
         System.out.printf("The max Heart Rate is %.1f%n", maxHeartRate);
         System.out.printf("The tarjet heart rate is from %f to %.1f%n%n", maxHeartRate * 0.5, maxHeartRate * 0.85);
     }

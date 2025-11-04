@@ -1,14 +1,14 @@
 package SixthExercise;
 
 public class HealthProfile {
-    String name;
-    String surname;
-    String sex; // Male or Female
-    int dd;
-    int mm;
-    int yy;
-    double height; // In meters
-    double weight; // In Kilograms
+    private String name;
+    private String surname;
+    private String sex; // Male or Female
+    private int dd;
+    private int mm;
+    private int yy;
+    private double height; // In meters
+    private double weight; // In Kilograms
 
     public HealthProfile (String name, String surname, String sex, int dd, int mm, int yy, double height, double weight)
     {
@@ -43,7 +43,7 @@ public class HealthProfile {
     {
         return weight / (height * height);
     }
-    
+
     void setName(String name) {this.name = name;}
     void setSurname (String surname) {this.surname = surname;}
     void setSex(String sex) {this.sex = sex;}
