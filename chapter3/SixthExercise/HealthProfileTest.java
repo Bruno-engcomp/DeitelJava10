@@ -6,8 +6,12 @@ public class HealthProfileTest {
         HealthProfile patient1 = new HealthProfile("Bruno", "Almeida", "Male", 6, 9, 2007, 1.83 , 75.00);
         HealthProfile patient2 = new HealthProfile("Allana", "Kamilla", "Female", 14, 3, 2007, 1.64, 50.00);
 
+        setInformations(patient1);
+        setInformations(patient2);
+
         DisplayHealthProfile(patient1);
         heartRateInterval(patient1);
+
         DisplayHealthProfile(patient2);
         heartRateInterval(patient2);
 
@@ -29,7 +33,7 @@ public class HealthProfileTest {
         System.out.printf("The tarjet heart rate is from %.1f to %.1f%n", maxHeartRate * 0.5, maxHeartRate * 0.85);
     }
 
-    public static void setMetods(HealthProfile Patient)
+    public static void setInformations(HealthProfile Patient)
     {
         Scanner input = new Scanner(System.in);
 
