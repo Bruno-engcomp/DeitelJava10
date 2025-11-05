@@ -5,7 +5,6 @@ public class Quilometragem {
         int kmTotal = 0;
         int lTotal = 0;
         int x = 0;
-
         while (x != -1)
         {
             System.out.print("Digite a quantidade de kilometros percorridos nessa viagem:");
@@ -14,10 +13,11 @@ public class Quilometragem {
             System.out.print("Digite a quantidade de litros gastos nessa viagem:");
             lTotal += input.nextInt();
 
-            System.out.print("Deseja parar? Digite {-1}: ");
+            System.out.print("Para continuar digite qualquer numero, Para parar Digite {-1}: ");
             x = input.nextInt();
         }
         System.out.printf("A quantidade total de kilometros percorridos foi %d%n", kmTotal);
         System.out.printf("A quantidade total de litros gastos foi %d%n", lTotal);
+        System.out.printf("A rendimento foi %.2f kilometro/litro ", (float)kmTotal/lTotal);
     }
 }
