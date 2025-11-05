@@ -39,10 +39,7 @@ public class HealthProfile {
     int getAge() {return 2025 - yy;}
     double getHeight() {return height;}
     double getWeight() {return weight;}
-    double getImc()
-    {
-        return weight / (height * height);
-    }
+    double getImc() {return weight / (height * height);}
 
     void setName(String name) {this.name = name;}
     void setSurname (String surname) {this.surname = surname;}

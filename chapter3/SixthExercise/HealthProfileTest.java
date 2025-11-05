@@ -9,8 +9,11 @@ public class HealthProfileTest {
 
     public static void DisplayHealthProfile(HealthProfile Patient)
     {
-        System.out.printf("Name: %s%d Surname: %s%d", Patient.getName(),);
+        System.out.printf("Name: %s%nSurname: %s%n", Patient.getName(),Patient.getSurname());
+        System.out.printf("Birthday %d/%d/%d%n", Patient.getDd(),Patient.getMm(),Patient.getYy());
+        System.out.printf("Age: %d", Patient.getAge());
     }
+
     public static void heartRateInterval(HealthProfile Patient)
     {
         double maxHeartRate = 220 - (2025 - Patient.getYy());
