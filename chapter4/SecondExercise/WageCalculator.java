@@ -25,6 +25,10 @@ public class WageCalculator {
     }
     String getName () {return name;}
 
+    void setHoursWage (double hoursWage) {this.hoursWage = hoursWage;}
+    void setHours (int hours) {this.hours = hours;}
+    void setExtraHours (int extraHours) {this.extraHours = extraHours;}
+
     void employeeSummary ()
     {
         System.out.printf("Name: %s", name);
