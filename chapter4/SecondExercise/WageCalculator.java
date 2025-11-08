@@ -1,10 +1,12 @@
 package SecondExercise;
 
 public class WageCalculator {
-    String name;
-    double hoursWage;
-    int hours;
-    int extraHours;
+    private String name;
+    private double hoursWage;
+    private int hours;
+    private int extraHours;
+
+
 
     public WageCalculator(String name, double hoursWage, int hours, int extraHours)
     {
@@ -17,5 +19,18 @@ public class WageCalculator {
             this.extraHours = extraHours;
     }
 
-    
+    double getWage()
+    {
+        return (hoursWage * hours) + (extraHours * hoursWage * 0.5);
+    }
+    String getName () {return name;}
+
+    void employeeSummary ()
+    {
+        System.out.printf("Name: %s", name);
+        System.out.printf("Wage: %.2f", getWage());
+
+    }
+
+
 }
