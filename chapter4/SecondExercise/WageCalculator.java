@@ -19,20 +19,20 @@ public class WageCalculator {
             this.extraHours = extraHours;
     }
 
-    double getWage()
+    public double getWage()
     {
         return (hoursWage * hours) + (extraHours * hoursWage * 0.5);
     }
     String getName () {return name;}
 
-    void setHoursWage (double hoursWage) {this.hoursWage = hoursWage;}
-    void setHours (int hours) {this.hours = hours;}
-    void setExtraHours (int extraHours) {this.extraHours = extraHours;}
+    public void setHoursWage (double hoursWage) {this.hoursWage = hoursWage;}
+    public void setHours (int hours) {this.hours = hours;}
+    public void setExtraHours (int extraHours) {this.extraHours = extraHours;}
 
-    void employeeSummary ()
+    public void employeeSummary ()
     {
         System.out.printf("Name: %s%n", name);
-        System.out.printf("Wage: %.2f", getWage());
+        System.out.printf("Wage: %.2f%n", getWage());
 
     }
 
