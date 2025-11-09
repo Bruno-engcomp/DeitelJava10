@@ -31,7 +31,7 @@ public class WageCalculator {
 
     void employeeSummary ()
     {
-        System.out.printf("Name: %s", name);
+        System.out.printf("Name: %s%n", name);
         System.out.printf("Wage: %.2f", getWage());
 
     }

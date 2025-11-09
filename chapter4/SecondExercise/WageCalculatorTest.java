@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class WageCalculatorTest {
     public static void main(String[] args) {
         WageCalculator Employee1 = new WageCalculator("Bruno", 200, 20, 10);
+        set(Employee1);
+        Employee1.employeeSummary();
 
 
     }
