@@ -21,7 +21,10 @@ public class Palindromo {
             invertido = invertido * 10 + resto;
             n /= 10;
         }
-        System.out.print(invertido);
+        if(original == invertido)
+            System.out.printf("The number %d is a Palindrome ", original);
+        else
+            System.out.printf("The number %d is not a Palindrome ", original);
 
 
     }
