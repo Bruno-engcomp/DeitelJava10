@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class rectangleTriangle {
+public class RightTriangle {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n1,n2,n3, c1, c2 ,hipotenuse = 0;
@@ -59,7 +59,10 @@ public class rectangleTriangle {
             c1 = n1;
             c2 = n2;
         }
-        System.out.printf("The hipotenuse of the triangle is %d", hipotenuse);
-        if(())
+        System.out.printf("The hipotenuse of the triangle is %d%n", hipotenuse);
+        if(((c1*c1)+(c2*c2))==(hipotenuse*hipotenuse))
+            System.out.println("This is a Right triangle");
+        else
+            System.out.println("This is not a Right triangle");
     }
 }
