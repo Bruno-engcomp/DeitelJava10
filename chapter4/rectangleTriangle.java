@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class rectangleTriangle {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int n1,n2,n3;
+        int n1,n2,n3, c1, c2 ,hipotenuse = 0;
         while(true)
         {
             while(true)
@@ -41,5 +41,25 @@ public class rectangleTriangle {
             else
                 break;
         }
+        if (n1 >= n2 && n1 >= n3)
+        {
+            hipotenuse = n1;
+            c1 = n2;
+            c2 = n3;
+        }
+        else if (n2 >= n1 && n2 >= n3)
+        {
+            hipotenuse = n2;
+            c1 = n1;
+            c2 = n3;
+        }
+        else
+        {
+            hipotenuse = n3;
+            c1 = n1;
+            c2 = n2;
+        }
+        System.out.printf("The hipotenuse of the triangle is %d", hipotenuse);
+        if(())
     }
 }
