@@ -1,17 +1,20 @@
 package autopolicy;
 // Figura 5.11: AutoPolicy.java
 // Classe que representa uma apólice de seguro de automóvel.
-public class AutoPolicyModified
+public class AutoPolicy
 {
     private int accountNumber; // número da conta da apólice
     private String makeAndModel; // carro ao qual a apólice é aplicada
     private String state;       // abreviatura do estado com duas letras
                             // construtor
-    public AutoPolicyModified(int accountNumber, String makeAndModel, String state)
+    public AutoPolicy(int accountNumber, String makeAndModel, String state)
     {
         this.accountNumber = accountNumber;
         this.makeAndModel = makeAndModel;
-        this.state = state;
+        if(state == "CT" || state == "MA" || state == "ME" || state == "NH" || state == "NJ" || state == "NY" || state == "PA" || state == "VT")
+            this.state = state;
+        else
+            System.out.println("This state is invalid, please enter a valid state");
     }
     // define o accountNumber
     public void setAccountNumber(int accountNumber)
@@ -41,7 +44,10 @@ public class AutoPolicyModified
     // retorna o estado
     public String getState()
     {
-        return state;
+        if(state == null)
+            return "Invalid State";
+        else
+            return state;
     }
     // método predicado é retornado se o estado tem seguros “sem culpa”
     public boolean isNoFaultState()
